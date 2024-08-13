@@ -1,9 +1,14 @@
 from pydub import AudioSegment
-
+import simpleaudio as sa
 
 
 # # Memuat file audio
 audio = AudioSegment.from_file('music.mp3')
+
+wave_obj = sa.WaveObject.from_wave_file('format.wav')
+play_obj = wave_obj.play()
+
+play_obj.wait_done()
 
 # # Menyimpan file audio
 # audio.export('music.mp3', format='mp3')
