@@ -3,7 +3,7 @@ import simpleaudio as sa
 
 
 # # Memuat file audio
-audio = AudioSegment.from_file('music.mp3')
+audio = AudioSegment.from_file('format.wav')
 
 wave_obj = sa.WaveObject.from_wave_file('format.wav')
 play_obj = wave_obj.play()
@@ -28,5 +28,5 @@ play_obj.wait_done()
 
 
 # ##PENGATURAN VOLUME
-louder_audio = audio + 10  # Meningkatkan volume sebesar 10dB
-louder_audio.export('volume.mp3', format='mp3')
+# louder_audio = audio + 10  # Meningkatkan volume sebesar 10dB
+# louder_audio.export('volume.mp3', format='mp3')
